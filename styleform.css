@@ -1,0 +1,140 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body{
+    background: #EC9192;
+    color: #DB5375;
+    line-height: 1.6;
+    padding: 1em;
+}
+
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.brand{
+    text-align: center;
+}
+
+.brand span{
+    color: #fff;
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+
+.company-info{
+    background: #EC9192;
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0;
+    color:white
+}
+
+.contact{
+    background: #f9feff;
+}
+ 
+/* Form styling */
+
+/*
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}*/
+
+.contact form label{
+    display: block;
+}
+
+.contact form p{
+    margin: 0;
+}
+
+.contact form  .full{
+    grid-column: 1 / 3;
+}
+
+.contact form button{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #DB5375;
+    color: white
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #DB5375;
+}
+
+.contact form button{
+    background: #DB5375;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus{
+    background: #EC9192;
+    color: #fff;
+    outline: 0;
+    transition: background-color 1s ease-out;
+}
+
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: none;
+}
+/* desktop */
+
+@media(min-width: 700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > *{
+        padding: 2em;
+    }
+
+    .company-info ul{
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    .company-info h3{
+        padding-top: 20px;
+    }
+
+    
+    .company-info h3, .company-info ul{
+        text-align: left;
+    }
+}       
