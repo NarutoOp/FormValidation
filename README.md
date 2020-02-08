@@ -1,2 +1,2 @@
 # reGexBasic
-A school assignment
+A college assignment
